@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Instagram - Clone coding</title>
+    <style>
+        @import url('css/default.css');
+        @import url('css/gnb.css');
+        @import url('css/feed.css');         
+    </style>
+    <script>
+        let is_liked = true;
+
+        function like(){
+            if (is_liked == true) {
+                $('#heart').attr('src','image/icons/12.png')
+                is_liked = false;
+            } else {
+                $('#heart').attr('src', 'image/icons/5.png')
+                is_liked = true;
+
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+
+        <div class="sidebar">
+            <li class="flex-row">
+                <img width="102" src="image/logo_instagram.png">
+            </li>
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/1.png">
+                <p>Home</p>
+            </li>
+
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/11.png">
+                <p>Search</p>
+            </li>
+
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/4.png">
+                <p>Explore</p>
+            </li>
+
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/14.png">
+                <p>Reels</p>
+            </li>
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/15.jpeg">
+                <p>Messages</p>
+            </li>
+
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/5.png">
+                <p>Notification</p>
+            </li>
+            <li class="flex-row sidebar-content">
+
+                <img src="image/icons/3.png">
+                <p>Create</p>
+            </li>
+            <li class="flex-row sidebar-content">
+                <img width="32" src="image/profile/Nina.jpg">
+                <p>Profile</p>
+            </li>
+            <li class="flex-row bawah-content">
+                <img src="image/icons/16.png">
+                <p>More</p>
+            </li> 
+        </div>
+        <div class="wrapper">
+        <div class="tengah flex-col">
+            <div class="status-wrapper">
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/1.jpeg">
+                    </div>
+                    <p class="username">Learningx</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/2.jpg">
+                    </div>
+                    <p class="username">12.tekajehiji</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/3.jpeg">
+                    </div>
+                    <p class="username">ddsusi_ssnti</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/4.jpg">
+                    </div>
+                    <p class="username">disney</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/5.jpg">
+                    </div>
+                    <p class="username">aaswhyni</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/6.jpeg">
+                    </div>
+                    <p class="username">lutfiainunisa_1717</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/7.jpg">
+                    </div>
+                    <p class="username">nurrosaisyah_</p>
+                </div>
+
+                <div class="status-card">
+                    <div class="profile-pic">
+                        <img width="32" src="image/follower/8.jpg">
+                    </div>
+                    <p class="username">netflixid</p>
+                </div>
+            </div>
+
+            <div class="feed flex-col">
+                <div class="profile flex-row">
+                <div class="img-wrap">
+                    <img width="32" src="image/profile/seoul.png">
+                </div>
+                <p class="flex-col">
+                    <span>snu.official <img width="13" src="image/follower/11.jpeg"></span>
+                    <span>Seoul National University</span>
+                </p>
+                <img width="20" src="image/icons/7.png">
+            </div>
+            <div class="imgs swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/post/1.jpg"></div>
+                    <div class="swiper-slide"><img src="image/post/2.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="feed-icons flex-row">
+                <img id="heart" onclick="like()" src="image/icons/5.png">
+                <img src="image/icons/9.png">
+                <img src="image/icons/2.png">
+                <img src="image/icons/10.png">
+            </div>
+            <div class="likes">
+                4.716 likes
+            </div>
+            <div class="comments">
+                <span class="title">snu.official</span>
+                올 겨울 캠퍼스에 마지막 눈❄️
+                <span class="hastag">#서울대학교 #겨울 #캠퍼스 #전경 #눈 #SNU#</span>
+            </div>
+            <div class="count">
+                View all 150 comments
+            </div>
+            <div class="commentar">
+                <div class="comment-box flex-row">
+                    <input type="text" placeholder="Add a comment.."/>
+                </div>
+                <div class="imgs emoji-icons">
+                    <img src="image/icons/17.png">
+                </div>
+            </div>
+                <!-- <div class ="time">
+                    20 HOURS AGO
+                </div> -->  
+            </div>
+        </div>
+        <div class="account">
+            <div class="account-content">
+                <li class="flex-row">
+                    <div class="img-wrap">
+                        <img width="56" src="image/profile/Nina.jpg">
+                    </div>
+                    <p class="flex-col">
+                        <span>Nina Royani</span>
+                        <span>Nina Royani</span>
+                    </p>
+                    <a href="#">Switch</a>
+                </li>
+                <li class="flex-row suggestion">
+                    <span>Suggestion for you</span>
+                    <a href="#">See All</a>
+                </li>
+
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="image/follower/9.jpg">
+                    </div>
+                    <p class="flex-col">
+                        <span>nabilataqiyyah <img width="13" src="image/follower/11.jpeg"></span>
+                        <span>suggestion for you</span>
+                    </p>
+                    <a href="#">follow </a>
+                </li>
+
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="image/follower/10.jpg">
+                    </div>
+                    <p class="flex-col">
+                        <span>iqbaal.e <img width="13" src="image/follower/11.jpeg"></span>
+                        <span>suggestion for you</span>
+                    </p>
+                    <a href="#">follow</a>
+                </li>
+
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="image/follower/instagram.jpeg">
+                    </div>
+                    <p class="flex-col">
+                        <span>instagram <img width="13" src="image/follower/11.jpeg"></span>
+                        <span>suggestion for you</span>
+                    </p>
+                    <a href="#">follow</a>
+                </li>
+
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="image/follower/12.jpg">
+                    </div>
+                    <p class="flex-col">
+                        <span>salmasalsabil12 <img width="13" src="image/follower/11.jpeg"></span>
+                        <span>suggestion for you</span>
+                    </p>
+                    <a href="#">follow</a>
+                </li>
+
+                <li class="flex-row friends">
+                    <div class="img-wrap">
+                        <img width="32" src="image/follower/13.jpg">
+                    </div>
+                    <p class="flex-col">
+                        <span>prillylatuconsina96<img width="13" src="image/follower/11.jpeg"></span>
+                        <span>suggestion for you</span>
+                    </p>
+                    <a href="#">follow</a>
+                </li>
+            </div>
+            <div class="about">
+                <a href="#">About</a>
+                <a href="#">Help</a>
+                <a href="#">Press</a>
+                <a href="#">API</a>
+                <a href="#">Jobs</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Locations</a>
+                <a href="#">Language</a>
+                <a href="#">English</a>
+            </div>
+            <div class="name"> 
+                @ 2024 INSTAGRAM FROM META
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+
+            
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            
+            direction: 'horizontal',
+            loop: true,
+            
+            pagination: {
+                el: '.swiper-pagination',
+            },
+    
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+    
+          
+        });
+    </script> 
+</body>
+</html>
